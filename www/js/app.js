@@ -31,6 +31,15 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     templateUrl: 'templates/menu.html',
     controller: 'AppCtrl'
   })
+  
+  .state('app.epicench', {
+    url: '/epicench',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/epicench/epicench.html'
+      }
+    }
+  })
 
   .state('app.search', {
     url: '/search',
